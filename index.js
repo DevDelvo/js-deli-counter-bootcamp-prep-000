@@ -1,8 +1,12 @@
 var katzDeli = [];
 
-function takeANumber(line, number) {
-  line.push();
-  return `Welcome, you are number ${line.length}.`
+
+function takeANumber(line) {
+  if (line.length === 0) {
+    return "Welcome, you are number 1.";
+  } else {
+    return `Welcome, you are number ${line.length + 1}.`
+  }
 }
 
 function nowServing(line) {
